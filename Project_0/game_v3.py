@@ -22,20 +22,20 @@ def game_core_v3(number: int = 1) -> int:
     # первое число задается рандомно
     predict = np.random.randint(1, 101) 
     # Границы поиска
-    min_number, max_number = 0, 100 
+    min_value, max_value = 0, 100 
 
     # в цикле перебираем числа с учетом того, 
     # больше или меньше загаданного наше число
     while number != predict:
-        count += 1
-
-        if number > predict:
-            min_number = predict + 1
-            predict = (max_number+min_number) // 2
-
+        count+=1
+        # Если условие выполняется, переопределяем нижнюю границу поиска
+        if number > predict: 
+            min_value = predict + 1
+            predict = (max_value + min_value) // 2
+        # Если условие выполняется, переопределяем верхнюю границу поиска
         elif number < predict:
-            max_number = predict - 1
-            predict = (max_number+min_number) // 2
+            max_value = predict - 1
+            predict = (max_value + min_value) // 2
 
     # Ваш код заканчивается здесь
 
@@ -64,6 +64,6 @@ def score_game(random_predict) -> int:
     print(f'Ваш алгоритм угадывает число в среднем за: {score} попыток')
     return(score)
 
-
-score_game(game_core_v3)
+if __name__ == '__main__':
+    score_game(game_core_v3)
 
