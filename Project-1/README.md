@@ -18,7 +18,8 @@
 
 ### Краткая информация о данных
 Исходный DataFrame находится на *GoogleDrive* из-за невозможности загрузить на *GitHub* файлы большого размера.             
-[***Ссылка на файл***](https://drive.google.com/file/d/1P7JCJJc5w0-cXGc9V-yme-pBXmCe1Ogk/view?usp=share_link) 
+[***Ссылка на файл***](https://drive.google.com/file/d/1P7JCJJc5w0-cXGc9V-yme-pBXmCe1Ogk/view?usp=share_link).
+Графики составлены с использованием библиотеки Plotly Express и поэтому не отображаются в GitHub, вследствие чего они сохранениы в формате html и помещены в отдельную папку graphics. 
 
 ### Метрика качества       
 - Отсутствие "сложных" признаков;
